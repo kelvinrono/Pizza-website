@@ -52,7 +52,7 @@
  .landing{
      height: 40vh;
      width: 100%;
-     background-image:url(./images/pizza1.jpg);
+     background-image:url('./images/pizza1.jpg');
      background-size: cover;
      display: flex;
      flex-direction: column;
@@ -62,4 +62,16 @@
  }
  .landing:hover{
      opacity: .8;
+ }
+
+ .bigCard{
+   
+ }
+
+ .output{
+     width: 50vw;
+     height: 30vh;
+     display: flex;
+     flex-direction: column;
+     
  }
