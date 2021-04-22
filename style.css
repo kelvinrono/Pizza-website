@@ -3,6 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: bisque;
+}
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.menu ul li{
+    margin: 10px;
+}
 .logo{
     height: 50px;
     width: 50px;
@@ -11,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50%;
+    font-size:10%;
     
     
 
