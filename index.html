@@ -40,10 +40,21 @@
         <div class=" row sales g-4">
         
             <div class="card big col-auto " style="width: 18rem;">
+                <div class="card-header">
+                    <p class="card-text">Big Pizza</p>
+                  </div>
                 <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Big Pizza</p>
-                </div>
+                  <div class="card-body bigCard">
+                      <p>Ksh.1200</p>
+                      <p>
+                      <div class="form-check">
+                       
+                        <label class="form-check-label" for="flexCheckChecked">
+                               Check to Buy
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      </div></p>
+                  </div>
             </div>
          
               <div class="card medium col-auto" style="width: 18rem;">
@@ -66,7 +77,7 @@
       <div class="row">
           <div class="col-md-4">
             <label for="topping"> Choose the topping:</label>
-            <span><select class="form-select">
+            <span><select class="form-select" id="topping">
                 <option value="anchovies">Anchovies</option>
                 <option value="mushroom">Mushroom</option>
                 <option value="pepperoni">Pepperoni</option>
@@ -76,16 +87,16 @@
             </span>
           </div>
           <div class="crust col-md-4">
-            <label for="crust"> Choose the topping:</label>
+            <label for="crust"> Choose the crust:</label>
           <select  id="crust" class="form-select">
-            <option value="anchovies">cheesed-stuffed</option>
+            <option value="Cheesed-stuffed">cheesed-stuffed</option>
             <option value="anchovies">Flatbread</option>
             <option value="anchovies">Crispy</option>
             <option value="anchovies">Neapolitan</option>
           </select>
           </div>
       </div>
-        
+        <button class="purchase btn btn-primary gx-4">Checkout</button>
     </div>
 </body>
 </html>
