@@ -73,5 +73,19 @@
      height: 30vh;
      display: flex;
      flex-direction: column;
-     
+     background-color: lightsalmon;
+ }
+
+ .location, .topping, .crust, .purchase
+ {
+     margin-top: 10px;
+ }
+
+ .card{
+
+    margin-left:20px;
+ }
+ .card img:hover{
+    transform: scale(1.1);
+    transition: .6s ease-in-out;
  }
