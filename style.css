@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(to right, #eca913, #f9e3b2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50%;
+    
+    
+
+}
+ .logo h3{
+     transform: rotate(-30deg);
+ }
