@@ -6,32 +6,53 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    align-items: center;
+    height: 80px;
     background-color: bisque;
+    
 }
 
 
 .menu ul{
     display: flex;
     list-style: none;
-    text-decoration: none;
+  
 }
 .menu ul li{
     margin: 10px;
 }
+.menu ul li a{
+    text-decoration: none;
+}
 .logo{
-    height: 50px;
-    width: 50px;
-    background-image: linear-gradient(to right, #eca913, #f9e3b2);
+    height: 75px;
+    width: 75px;
+    background-image: linear-gradient(to right, #eca913, #fee3b2);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:10%;
-    
-    
+   margin-left: 5px;
 
 }
- .logo h3{
+ .logo p{
      transform: rotate(-30deg);
+     color: white;
+     
+ }
+ .kev{
+     color: blue;
+ }
+ .landing{
+     height: 40vh;
+     width: 100%;
+     background-image:url(./images/pizza1.jpg);
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ .landing:hover{
+     opacity: .8;
  }
