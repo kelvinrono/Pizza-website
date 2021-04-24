@@ -62,6 +62,7 @@
  }
  .landing:hover{
      opacity: .8;
+     overflow: hidden;
  }
 
  .bigCard{
@@ -85,7 +86,17 @@
 
     margin-left:20px;
  }
+ .card img{
+     text-align: center;
+ }
  .card img:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: .6s ease-in-out;
+ }
+ .remove{
+    color:red;
+
+ }
+ .location{
+     display: none;
  }

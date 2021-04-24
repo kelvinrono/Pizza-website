@@ -1,113 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>kevPizza Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>kevPizza Website</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="nav">
-            <div class="logo">
-                <p><b><span class="kev">kev</span>Pizza</b></p>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "contact.html">Contact us</a></li>
-                </ul>
-            </div>
+  <div class="container">
+    <div class="nav">
+      <div class="logo">
+        <p><b><span class="kev">kev</span>Pizza</b></p>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="landing">
+      <h3>Choose you favourite pizza at <b>kevPizza</b></h3>
+      <p>You can have you pizza delivered at your place of your choice</p>
+    </section>
+
+    <div class=" row sales g-4">
+
+      <div class="card big col-md-3 ">
+        <div class="card-header">
+          <p class="card-text">Big Pizza</p>
         </div>
+        <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
+        <div class="card-body bigCard">
+          <p>Ksh.1200</p>
+          
+        </div>
+      </div>
 
-        <section class="landing">
-            <h3>Choose you favourite pizza at <b>kevPizza</b></h3>
-            <p>You can have you pizza delivered at your place of your choice</p>
-        </section>
+      <div class="card medium col-md-3">
 
-        <div class=" row sales g-4">
+        <div class="card-header">
+          <p class="card-text">Medium Pizza</p>
+        </div>
+        <img src="./images/pizza-medium.jpeg" class="card-img-top" alt="...">
+
+        <div class="card-body bigCard">
+          <p>Ksh.700</p>
+      
+        </div>
+      </div>
+      <div class="card small col-md-3">
+        <div class="card-header">
+          <p class="card-text">Small Pizza</p>
+        </div>
+        <img src="./images/kaboompics_Seafood Pizza.jpg" class="card-img-top" alt="...">
+        <div class="card-body bigCard">
+          <p>Ksh. 400</p>
+          
         
-            <div class="card big col-auto ">
-                <div class="card-header">
-                    <p class="card-text">Big Pizza</p>
-                  </div>
-                <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
-                  <div class="card-body bigCard">
-                      <p>Ksh.1200</p>
-                      <p>
-                      <div class="form-check">
-                       
-                        <label class="form-check-label" for="big">
-                               Check to Buy
-                        </label>
-                        <input class="form-check-input" type="checkbox" value="big" id="big" >
-                      </div></p>
-                  </div>
-             </div>
-         
-              <div class="card medium col-auto">
 
-                <div class="card-header">
-                    <p class="card-text">Medium Pizza</p>
-                  </div>
-                <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
-                
-                <div class="card-body bigCard">
-                    <p>Ksh.700</p>
-                    <p>
-                    <div class="form-check">
-                     
-                      <label class="form-check-label" for="medium">
-                             Check to Buy
-                      </label>
-                      <input class="form-check-input" type="checkbox" value="medium" id="medium">
-                    </div></p>
-              </div>
-              </div>
-              <div class="card small col-auto" >
-                <div class="card-header">
-                    <p class="card-text">Small Pizza</p>
-                  </div>
-                <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
-                <div class="card-body bigCard">
-                    <p>Ksh. 400</p>
-                    <p>
-                    <div class="form-check">
-                     
-                      <label class="form-check-label" for="small">
-                             Check to Buy
-                      </label>
-                      <input class="form-check-input" type="checkbox" value="small" id="small">
-                    </div></p>
-                
-              </div>
         </div>
+      </div>
 
 
-        <section class="selection">
-
-          <div class=" size col-md-4">
-            <label for="size"> Choose your size:</label>
-            <span><select class="form-select" id="size">
-                <option value="Large">Large</option>
-                <option value="Medium">Medium</option>
-                <option value="Small">Small</option>
-              </select>
-            </span>
-          </div>
-      <div class="row">
+      <section class="selection">
+        <div class="row">
+        <div class=" size col-md-4">
+          <label for="size"> Choose your size:</label>
+          <span><select class="form-select" id="size">
+              <option value="Large">Large</option>
+              <option value="Medium">Medium</option>
+              <option value="Small">Small</option>
+            </select>
+          </span>
+        </div>
+       
           <div class=" topping col-md-4">
             <label for="topping"> Choose the topping:</label>
             <span><select class="form-select" id="topping">
@@ -119,28 +101,43 @@
               </select>
             </span>
           </div>
+        </div>
+        <div class="row">
           <div class="crust col-md-4">
             <label for="crust"> Choose the crust:</label>
-          <select  id="crust" class="form-select">
-            <option value="Cheesed-stuffed">cheesed-stuffed</option>
-            <option value="anchovies">Flatbread</option>
-            <option value="anchovies">Crispy</option>
-            <option value="anchovies">Neapolitan</option>
-          </select>
+            <select id="crust" class="form-select">
+              <option value="Cheesed-stuffed">cheesed-stuffed</option>
+              <option value="anchovies">Flatbread</option>
+              <option value="anchovies">Crispy</option>
+              <option value="anchovies">Neapolitan</option>
+            </select>
           </div>
+     
+          
+          <form class="deliveryForm">
+            <span>Confirm delivery:</span>
+          <div class="form-check" id="">
+            <input class="form-check-input" type="checkbox" name="checkbox" id="deliver">
+            <label class="form-check-label" for="deliver">
+              :Deliver
+            </label>
+          </div>
+ 
+          </form>
+        <div class=" location col-md-4">
+          <label for="location"> Location:</label>
+          <span><select class="form-select" id="location">
+            <option value="Not selected">Not selected</option>
+              <option value="Kangemi">Kangemi</option>
+              <option value="Uthiru">Uthiru</option>
+              <option value="Westlands">Westlands</option>
+              <option value="Kawangware">Kawangware</option>
+              <option value="Kikuyu">Kikuyu</option>
+            </select>
+          </span>
         </div>
-
-      <div class=" location col-md-4">
-        <label for="location"> Location:</label>
-        <span><select class="form-select" id="location">
-            <option value="Kangemi">Kangemi</option>
-            <option value="Uthiru">Uthiru</option>
-            <option value="Westlands">Westlands</option>
-            <option value="Kawangware">Kawangware</option>
-            <option value="Kikuyu">Kikuyu</option>
-        </select>
-        </span>
       </div>
+   
         <button class="purchase btn btn-primary gx-4">Checkout</button>
     </div>
     <table class="table table-striped">
@@ -150,9 +147,11 @@
         <th>Crust</th>
         <th>Location</th>
         <th>Price</th>
-        
+        <th></th>
+
       </tr>
     </table>
     <div class="result"></div>
 </body>
+
 </html>

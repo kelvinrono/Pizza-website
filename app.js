@@ -33,13 +33,14 @@ $(".table").append(
         <td>${crust}</td>
         <td>${location}</td>
         <td>${price}</td>
-        <td><button class="btn  remove">remove</button></td>
-      </tr>
+        <td><button class="btn remove">remove</button></td>
+    </tr>
     `
 )
 
 var value;
 var theTotal = 0;
+function updateTotal(){
 $("td:nth-child(5)").each(function () {
     value = $(this).html();
    
@@ -47,14 +48,56 @@ $("td:nth-child(5)").each(function () {
     theTotal += parseInt(value);
     $(".result").text('Total: ' + theTotal);
 });
+}
 
+updateTotal()
+
+// function reduceTotal(){
+
+//     $("td:nth-child(5)").each(function () {
+//         value = $(this).html();
+       
+    
+//         theTotal -= parseInt(value);
+//         $(".result").text('Total: ' + theTotal);
+//     });  
+
+    
+// }
 
     var deletebtn = $(".remove");
+    deletebtn.addClass('remove')
     deletebtn.click(function(e){
         const btn = e.target;
         btn.closest('tr').remove();
+        reduceTotal();
+        
     })
+ 
 
 })
 
+
+// $("#deliver") // select the radio by its id
+//     .change(function(){ // bind a function to the change event
+//         if( $(this).is(":checked") ){ // check if the radio is checked
+//             // var val = $(this).val();
+//             $(".location").removeClass('location')
+       
+//         }
+//         else if( $(this).is(!":checked") ){
+//             $(".location").addClass('location')
+//         }
+
+        
+//     });
+
+$('input[type="checkbox"]').click(function(){
+    if($(this).prop("checked") == true){
+        $(".location").show()
+    }
+    else if($(this).prop("checked") == false){
+        $(".location").hide()
+    }
+});
 })
