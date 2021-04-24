@@ -33,6 +33,7 @@ $(".table").append(
         <td>${crust}</td>
         <td>${location}</td>
         <td>${price}</td>
+        <td><button class="btn  remove">remove</button></td>
       </tr>
     `
 )
@@ -46,6 +47,14 @@ $("td:nth-child(5)").each(function () {
     theTotal += parseInt(value);
     $(".result").text('Total: ' + theTotal);
 });
+
+
+    var deletebtn = $(".remove");
+    deletebtn.click(function(e){
+        const btn = e.target;
+        btn.closest('tr').remove();
+    })
+
 })
 
 })
