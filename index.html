@@ -97,6 +97,16 @@
 
 
         <section class="selection">
+
+          <div class=" size col-md-4">
+            <label for="size"> Choose your size:</label>
+            <span><select class="form-select" id="size">
+                <option value="Large">Large</option>
+                <option value="Medium">Medium</option>
+                <option value="Small">Small</option>
+              </select>
+            </span>
+          </div>
       <div class="row">
           <div class=" topping col-md-4">
             <label for="topping"> Choose the topping:</label>
@@ -106,7 +116,7 @@
                 <option value="pepperoni">Pepperoni</option>
                 <option value="spinach">Spinach</option>
                 <option value="pineapple">Pineapple</option>
-            </select>
+              </select>
             </span>
           </div>
           <div class="crust col-md-4">
@@ -118,7 +128,7 @@
             <option value="anchovies">Neapolitan</option>
           </select>
           </div>
-      </div>
+        </div>
 
       <div class=" location col-md-4">
         <label for="location"> Location:</label>
@@ -133,7 +143,15 @@
       </div>
         <button class="purchase btn btn-primary gx-4">Checkout</button>
     </div>
-
-    <div id="output"></div>
+    <table class="table table-striped">
+      <tr>
+        <th>Size</th>
+        <th>Topping</th>
+        <th>Crust</th>
+        <th>Location</th>
+        <th>Price</th>
+      </tr>
+    </table>
+    <div class="result"></div>
 </body>
 </html>
