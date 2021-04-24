@@ -8,11 +8,13 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: bisque;
+    background-color: rgb(214, 132, 32);
     
 }
 
-
+.container{
+    background-color: bisque;
+}
 .menu ul{
     display: flex;
     list-style: none;
@@ -69,6 +71,10 @@
    
  }
 
+ .table{
+     overflow:scroll;
+     width: 100%;
+ }
  .output{
      width: 50vw;
      height: 30vh;
@@ -77,9 +83,10 @@
      background-color: lightsalmon;
  }
 
- .location, .topping, .crust, .purchase
+  .size, .topping, .crust, .location
  {
      margin-top: 10px;
+     line-height: 50px;
  }
 
  .card{
@@ -99,4 +106,19 @@
  }
  .location{
      display: none;
+ }
+
+ .purchase{
+     margin:10px
+ }
+ .deliveryForm{
+     margin: 20px;
+     padding: 10px;
+ }
+
+ @media  (max-width:768){
+
+    table{
+        overflow-x: auto;
+    }
  }

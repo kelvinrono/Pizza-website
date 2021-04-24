@@ -24,6 +24,10 @@ else if(size==='Medium'){
 else if(size==='Small'){
     price=400
 }
+else if(size==='Not selected'){
+    alert("Please select your size!")
+    price=0;
+}
 
 $(".table").append(
     `
@@ -37,6 +41,7 @@ $(".table").append(
     </tr>
     `
 )
+
 
 var value;
 var theTotal = 0;
@@ -52,19 +57,6 @@ $("td:nth-child(5)").each(function () {
 
 updateTotal()
 
-// function reduceTotal(){
-
-//     $("td:nth-child(5)").each(function () {
-//         value = $(this).html();
-       
-    
-//         theTotal -= parseInt(value);
-//         $(".result").text('Total: ' + theTotal);
-//     });  
-
-    
-// }
-
     var deletebtn = $(".remove");
     deletebtn.addClass('remove')
     deletebtn.click(function(e){
@@ -77,20 +69,6 @@ updateTotal()
 
 })
 
-
-// $("#deliver") // select the radio by its id
-//     .change(function(){ // bind a function to the change event
-//         if( $(this).is(":checked") ){ // check if the radio is checked
-//             // var val = $(this).val();
-//             $(".location").removeClass('location')
-       
-//         }
-//         else if( $(this).is(!":checked") ){
-//             $(".location").addClass('location')
-//         }
-
-        
-//     });
 
 $('input[type="checkbox"]').click(function(){
     if($(this).prop("checked") == true){
