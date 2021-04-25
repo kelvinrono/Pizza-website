@@ -20,11 +20,6 @@ To access this project on your local files, you can clone it using these steps
 4. Git
 ### Live Site
 View [live]https://kelvinrono.github.io/Pizza-website/
-### BDD
 
-check if it is a boy born on monday, the Akan name is Kwadwo
-check if it is a girl born on wednesday the Akan name is Kwaku
-check if it is a boy born on sunday, the Akan name is Kwasi
-check if it is a girl born on tuesday, the Akan name is Abenaa
 ### Licence
 This project is under the  [MIT](LICENSE) licence
