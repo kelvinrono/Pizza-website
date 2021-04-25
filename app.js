@@ -14,6 +14,24 @@ var size = $("#size  option:selected").val();
 
 // }
 
+var crustPrice;
+if(topping==='anchovies'){
+    crustPrice=125
+}
+else if(topping==='pepperoni'){
+    crustPrice=100
+}
+else if(topping==='spinach'){
+    crustPrice=115
+}
+else if(topping==='pineapple'){
+   
+    crustPrice=130;
+}
+else if(topping==='mushroom'){
+   
+    crustPrice=140;
+}
 var price;
 if(size==='Large'){
     price=1200
@@ -29,14 +47,17 @@ else if(size==='Not selected'){
     price=0;
 }
 
-$(".table").append(
+var totalCost=price+crustPrice;
+var overalCost = parseInt(totalCost)
+
+$(".cart").append(
     `
     <tr>
         <td>${size}</td>
         <td>${topping}</td>
         <td>${crust}</td>
         <td>${location}</td>
-        <td>${price}</td>
+        <td>${overalCost}</td>
         <td><button class="btn remove">remove</button></td>
     </tr>
     `
@@ -62,7 +83,7 @@ updateTotal()
     deletebtn.click(function(e){
         const btn = e.target;
         btn.closest('tr').remove();
-        reduceTotal();
+        
         
     })
  
