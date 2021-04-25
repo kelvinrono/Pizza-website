@@ -2,18 +2,29 @@
 
 $(document).ready(function(){
 
+    $(".result").hide()
 $(".purchase").click(function(){
 var topping = $("#topping  option:selected").val()
 var crust = $("#crust  option:selected").val();
 var location = $("#location option:selected").val()
 var price = $("input[type='checkbox']").val();
 var size = $("#size  option:selected").val();
+var quantity = $(".quantity").val();
 // if(price==="big"){
 //     var value = 1200;
 //     $("#output").text(`Your cost is: ${value} and your pizza will be delivered to ${location.text()}`).addClass('output')
 
 // }
 
+function quantityChanged() {
+    
+    if (isNaN(quantity) || quantity<= 0) {
+        quantity = 1
+    }
+   
+}
+
+quantityChanged();
 var crustPrice;
 if(topping==='anchovies'){
     crustPrice=125
@@ -47,7 +58,7 @@ else if(size==='Not selected'){
     price=0;
 }
 
-var totalCost=price+crustPrice;
+var totalCost=quantity*(price+crustPrice);
 var overalCost = parseInt(totalCost)
 
 $(".cart").append(
@@ -57,6 +68,7 @@ $(".cart").append(
         <td>${topping}</td>
         <td>${crust}</td>
         <td>${location}</td>
+        <td>${quantity}</td>
         <td>${overalCost}</td>
         <td><button class="btn remove">remove</button></td>
     </tr>
@@ -66,17 +78,19 @@ $(".cart").append(
 
 var value;
 var theTotal = 0;
-function updateTotal(){
-$("td:nth-child(5)").each(function () {
-    value = $(this).html();
-   
 
-    theTotal += parseInt(value);
-    $(".result").text('Total: ' + theTotal);
-});
-}
+$(".checkout").click(function(){
+    $("td:nth-child(6)").each(function () {
+        value = $(this).html();
+       
+    
+        theTotal += parseInt(value);
+        $(".result").text('Total amount payable is: ' + theTotal+`. Thanks for shopping with us.`).show();
+    });
+    
+})
 
-updateTotal()
+
 
     var deletebtn = $(".remove");
     deletebtn.addClass('remove')
@@ -86,6 +100,8 @@ updateTotal()
         
         
     })
+
+ 
  
 
 })
@@ -98,5 +114,13 @@ $('input[type="checkbox"]').click(function(){
     else if($(this).prop("checked") == false){
         $(".location").hide()
     }
+
+
+   
 });
+
+
+
+//Add a modal for checkout
+
 })

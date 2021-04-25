@@ -48,7 +48,7 @@
         <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
         <div class="card-body bigCard">
           <p>Ksh.1200</p>
-          
+
         </div>
       </div>
 
@@ -61,7 +61,7 @@
 
         <div class="card-body bigCard">
           <p>Ksh.700</p>
-      
+
         </div>
       </div>
       <div class="card small col-md-3">
@@ -71,8 +71,8 @@
         <img src="./images/kaboompics_Seafood Pizza.jpg" class="card-img-top" alt="...">
         <div class="card-body bigCard">
           <p>Ksh. 400</p>
-          
-        
+
+
 
         </div>
       </div>
@@ -80,17 +80,17 @@
 
       <section class="selection">
         <div class="row">
-        <div class=" size col-md-4">
-          <label for="size"> <strong> Choose your size:</strong></label>
-          <span><select class="form-select" id="size">
+          <div class=" size col-md-4">
+            <label for="size"> <strong> Choose your size:</strong></label>
+            <span><select class="form-select" id="size">
 
-              <option value="Large">Large</option>
-              <option value="Medium">Medium</option>
-              <option value="Small">Small</option>
-            </select>
-          </span>
-        </div>
-       
+                <option value="Large">Large</option>
+                <option value="Medium">Medium</option>
+                <option value="Small">Small</option>
+              </select>
+            </span>
+          </div>
+
           <div class=" topping col-md-4">
             <label for="topping"> <strong> Choose the topping:</strong></label>
             <span><select class="form-select" id="topping">
@@ -114,59 +114,64 @@
             </select>
           </div>
 
-            <div class="col-md-4">
-          <table class="table table-striped  crust_table">
-            <tr>
-              <th>Topping</th>
-              <th>Price(Ksh)</th>
-            </tr>
-            <tr>
-              <td>Anchovies</td>
-              <td>125</td>
-            </tr>
-            <tr>
-              <td>Pepperoni</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>Spinach</td>
-              <td>115</td>
-            </tr>
-            <tr>
-              <td>Pineapple</td>
-              <td>130</td>
-            </tr>
-            <tr>
-              <td>Mushroom</td>
-              <td>140</td>
-            </tr>
-          </table>
-        </div>
-          
+          <div class="col-md-4">
+            <table class="table table-striped  crust_table">
+              <tr>
+                <th>Topping</th>
+                <th>Price(Ksh)</th>
+              </tr>
+              <tr>
+                <td>Anchovies</td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <td>Pepperoni</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Spinach</td>
+                <td>115</td>
+              </tr>
+              <tr>
+                <td>Pineapple</td>
+                <td>130</td>
+              </tr>
+              <tr>
+                <td>Mushroom</td>
+                <td>140</td>
+              </tr>
+            </table>
+          </div>
+
+ 
           <form class="deliveryForm">
             <span> <strong> Confirm delivery:</strong></span>
-          <div class="form-check" id="">
-            <input class="form-check-input" type="checkbox" name="checkbox" id="deliver">
-            <label class="form-check-label" for="deliver">
-              :Deliver
-            </label>
-          </div>
- 
+            <div class="form-check" id="">
+              <input class="form-check-input" type="checkbox" name="checkbox" id="deliver">
+              <label class="form-check-label" for="deliver">
+                :Deliver
+              </label>
+            </div>
+
           </form>
-        <div class=" location col-md-4">
-          <label for="location"> Location:</label>
-          <span><select class="form-select" id="location">
-            <option value="Not selected">Not selected</option>
-              <option value="Kangemi">Kangemi</option>
-              <option value="Uthiru">Uthiru</option>
-              <option value="Westlands">Westlands</option>
-              <option value="Kawangware">Kawangware</option>
-              <option value="Kikuyu">Kikuyu</option>
-            </select>
-          </span>
+          <div class=" location col-md-4">
+            <label for="location"> Location:</label>
+            <span><select class="form-select" id="location">
+                <option value="Not selected">Not selected</option>
+                <option value="Kangemi">Kangemi</option>
+                <option value="Uthiru">Uthiru</option>
+                <option value="Westlands">Westlands</option>
+                <option value="Kawangware">Kawangware</option>
+                <option value="Kikuyu">Kikuyu</option>
+              </select>
+            </span>
+          </div>
         </div>
-      </div>
-   
+        <div class="col-md-1">
+          <label for="Quantity">Quantity</label>
+          <input type="number" class="quantity form-control" value="1"  id="Quantity">
+        </div>
+
         <button class="purchase btn btn-primary gx-4">Add to cart</button>
     </div>
     <table class="table cart table-striped ">
@@ -175,14 +180,28 @@
         <th>Topping</th>
         <th>Crust</th>
         <th>Location</th>
+        <th>Qty</th>
+        <th>Price</th>
         <th>Total Cost</th>
         <th></th>
 
       </tr>
     </table>
-    <div class="result"></div>
 
-    <button  class="btn btn-success checkout" >Checkout</button>
+
+    <div class="row">
+      <div class="col-md-3">
+    <button class="btn btn-success checkout">Check Total</button>
+      </div>
+      <div class="col-md-3">
+            <div class="result"></div>
+      </div>
+  <div class="totalDisplay"></div>
+
+   </div>
+</div>
+
+
 </body>
 
 </html>
