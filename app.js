@@ -121,6 +121,5 @@ $('input[type="checkbox"]').click(function(){
 
 
 
-//Add a modal for checkout
 
 })

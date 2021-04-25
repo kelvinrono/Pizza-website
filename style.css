@@ -135,9 +135,25 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-@media  (max-width:768){
 
-    table{
-        overflow-x: auto;
+@media only screen and (max-width: 768px){
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
     }
+    .cartTable{
+        overflow-x: scroll;
+    }
+
+    .menu{
+    display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    
  }
